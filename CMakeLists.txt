@@ -1,0 +1,6 @@
+add_library(zpak STATIC zpak.c zpak.h)
+target_link_libraries(zpak lzs)
+add_executable(zpak-exe main.c)
+target_link_libraries(zpak-exe zpak)
+add_subdirectory(tests)
+add_subdirectory(lzs)
