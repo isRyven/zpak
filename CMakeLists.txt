@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.12)
+project(zpak LANGUAGES C)
 add_library(zpak STATIC zpak.c zpak.h)
 target_link_libraries(zpak lzs)
 add_executable(zpak-exe main.c)

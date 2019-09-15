@@ -1,5 +1,5 @@
-#include "minunit/minunit.h"
-#include "zpak/zpak.h"
+#include "minunit.h"
+#include "zpak.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>

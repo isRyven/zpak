@@ -5,7 +5,7 @@
 #include <assert.h>
 #include <time.h>
 
-#include "zpak/zpak.h"
+#include "zpak.h"
 
 double get_time()
 {
