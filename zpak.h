@@ -52,11 +52,16 @@
 			data
 		}
 
-	Todos: 
+	Todo: 
 	* add user header structure getter
 	* add user entry structure getter 
-	* add an option to hash entry names into 32b/64b fields, omitting the entry names
+	* add an option to hash entry names into 32b/64b fields, omitting the entry names completely
 	* implement writing/reading by handles (support stream read/writes)
+	* handle endianess
+	* flush internal buffer on request
+	* conditionally disable writer, leaving only reader, to further reduce lib binary size
+	* add option to disable runtime assertions during compilation
+	* entry path canonization
 */
 
 #ifndef ZPAK_ZPAK_H
