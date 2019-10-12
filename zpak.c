@@ -309,7 +309,8 @@ int zpak_it_get_entry_size(zpak_it_t *it)
 
 const char* zpak_it_get_entry_name(zpak_it_t *it)
 {
-	const uint8_t *cursor = (const uint8_t*)it->ctx->data + it->current;
+	const void *blob = GET_ZPAK_BLOB(it->ctx);
+	const uint8_t *cursor = (const uint8_t*)blob + it->current;
 	cursor += sizeof(zpak_entry_header_t);
 	return (const char*)cursor;
 }
